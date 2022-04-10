@@ -8,11 +8,16 @@
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2578125" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/drawable/icons8_load.xml" value="0.2578125" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/drawable/shadow.xml" value="0.2578125" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout-w1240dp/activity_proffesarlogin.xml" value="0.6" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout-w936dp/activity_proffesarlogin.xml" value="0.2" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_dashboard1.xml" value="0.264" />
-        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_forget.xml" value="0.24166666666666667" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_forget.xml" value="0.25" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_login.xml" value="0.29133858267716534" />
-        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_optionpage.xml" value="0.264" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_proffesarlogin.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_proffesor.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_proffesor_sign_page.xml" value="0.15806159420289856" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_singup.xml" value="0.264" />
       </map>
     </option>

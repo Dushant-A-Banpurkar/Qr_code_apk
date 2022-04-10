@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,7 +25,7 @@ public class Login extends AppCompatActivity {
 
     EditText semail,spassword;
     Button mloginbtn;
-    TextView signupbtn;
+    TextView signupbtn,forgetbtn;
     FirebaseAuth fAuth;
     ProgressBar progressBar;
     String emailPattern="[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
@@ -34,15 +35,16 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getSupportActionBar().hide();
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_login);
-
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
         semail=findViewById(R.id.profile_email);
         spassword=findViewById(R.id.password);
-        mloginbtn=findViewById(R.id.loginbtn);
+        mloginbtn=findViewById(R.id.contbtn);
         signupbtn=findViewById(R.id.signupbtn);
         progressBar=findViewById(R.id.progressBar);
+        forgetbtn=findViewById(R.id.forgetbtn);
         progressDialog=new ProgressDialog(this);
         fAuth=FirebaseAuth.getInstance();
 
@@ -66,11 +68,11 @@ public class Login extends AppCompatActivity {
                 if (password.length() < 6) {
                     spassword.setError("Password Must be 8 characters.");
                 } else {
-                    progressDialog.setMessage("Registration");
-                    progressDialog.setTitle("Registration");
+                    progressDialog.setMessage("Sign in");
+                    progressDialog.setTitle("Sign in");
                     progressDialog.setCanceledOnTouchOutside(false);
                     progressDialog.show();
-                    progressBar.setVisibility(View.VISIBLE);
+
 
                 }
                 fAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -94,6 +96,13 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Login.this,Singup.class);
+                startActivity(intent);
+            }
+        });
+        forgetbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Login.this,forget.class);
                 startActivity(intent);
             }
         });

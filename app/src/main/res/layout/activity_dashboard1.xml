@@ -10,77 +10,65 @@
         android:id="@+id/profile_phone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:drawableLeft="@drawable/ic_baseline_phone_24"
-        android:text="Phone No."
+        android:text=" Phone No."
         android:textColor="#A3000000"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:drawableTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/profile_image"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.482" />
+        app:layout_constraintVertical_bias="0.401" />
 
     <TextView
         android:id="@+id/profile_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:drawableLeft="@drawable/ic_baseline_email_24"
-        android:text="Email id"
+        android:text=" Email id"
         android:textColor="#A3000000"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:drawableTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/profile_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.52" />
+        app:layout_constraintVertical_bias="0.468" />
 
     <TextView
         android:id="@+id/profile_branch"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:drawableLeft="@drawable/ic_baseline_menu_book_24"
-        android:text="Branch"
+        android:text=" Branch"
         android:textColor="#A3000000"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:drawableTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/profile_image"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.445" />
+        app:layout_constraintVertical_bias="0.34" />
 
     <TextView
         android:id="@+id/profile_enrollment"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:drawableLeft="@drawable/ic_baseline_123_24"
-        android:text="Enrollment "
+        android:text=" Enrollment "
         android:textColor="#A3000000"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:drawableTint="#050505"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/profile_image"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.407" />
+        app:layout_constraintVertical_bias="0.277" />
 
     <Button
         android:id="@+id/Logoutbtn"
@@ -107,26 +95,6 @@
         tools:layout_editor_absoluteY="-4dp"
         />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profile_image"
-        android:layout_width="122dp"
-        android:layout_height="129dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        android:backgroundTint="@color/teal_200"
-        android:src="@drawable/ic_baseline_person_24"
-        app:civ_border_color="@color/black"
-        app:civ_border_width="2dp"
-        app:layout_constraintBottom_toBottomOf="@+id/Logoutbtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.19" />
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -146,48 +114,27 @@
         android:id="@+id/profile_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:drawableLeft="@drawable/ic_baseline_person_24"
-        android:text="Name"
+        android:text=" Name"
         android:textColor="#A3000000"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:drawableTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/profile_image"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.37" />
+        app:layout_constraintVertical_bias="0.216" />
 
     <ImageView
         android:id="@+id/Qrcode"
-        android:layout_width="229dp"
-        android:layout_height="208dp"
+        android:layout_width="288dp"
+        android:layout_height="267dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
         app:layout_constraintVertical_bias="0.815"
         tools:srcCompat="@tools:sample/avatars" />
-
-    <Button
-        android:id="@+id/uploadbtn"
-        android:layout_width="43dp"
-        android:layout_height="48dp"
-        android:backgroundTint="@color/teal_200"
-        android:contentDescription="@string/app_name"
-        android:drawableTop="@drawable/ic_baseline_photo_camera_24"
-        android:drawingCacheQuality="auto"
-        android:shadowColor="#000000"
-        android:textCursorDrawable="@color/black"
-        app:cornerRadius="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.603"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.294" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
