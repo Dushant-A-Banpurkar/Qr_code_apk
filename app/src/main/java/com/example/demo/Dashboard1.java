@@ -23,17 +23,23 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.zxing.BarcodeFormat;
+import com.google.zxing.MultiFormatWriter;
+import com.google.zxing.WriterException;
+import com.google.zxing.common.BitMatrix;
 
 import androidmads.library.qrgenearator.QRGContents;
 import androidmads.library.qrgenearator.QRGEncoder;
 
 public class Dashboard1 extends AppCompatActivity {
-    Button logoutbtn,upload;
-    ImageView image,qrcode;
+    Button logoutbtn;
     TextView name,enrollment,phone,email,branch;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userId;
+    public final static int QRCodeWidth = 500;
+    Bitmap bitmap;
+   ImageView iv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +55,8 @@ public class Dashboard1 extends AppCompatActivity {
         email=findViewById(R.id.profile_email);
         branch=findViewById(R.id.profile_branch);
         fAuth=FirebaseAuth.getInstance();
-        qrcode=findViewById(R.id.Qrcode);
+        iv = findViewById(R.id.image);
+
         fStore=FirebaseFirestore.getInstance();
         userId=fAuth.getCurrentUser().getUid();
 
@@ -65,7 +72,12 @@ public class Dashboard1 extends AppCompatActivity {
                 email.setText(documentSnapshot.getString("Email"));
                 branch.setText(documentSnapshot.getString("Branch"));
 
-
+                try{
+                    bitmap = textToImageEncode(enrollment.getText().toString());
+                    iv.setImageBitmap(bitmap);
+                } catch (Exception exception) {
+                    exception.printStackTrace();
+                }
 
             }
         });
@@ -80,6 +92,31 @@ public class Dashboard1 extends AppCompatActivity {
             }
         });
 
+    }
+
+    private Bitmap textToImageEncode(String value) throws WriterException {
+        BitMatrix bitMatrix;
+        try {
+            bitMatrix = new MultiFormatWriter().encode(value,
+                    BarcodeFormat.DATA_MATRIX.QR_CODE, QRCodeWidth, QRCodeWidth, null);
+        } catch (IllegalArgumentException e) {
+            return null;
+        }
+
+        int bitMatrixWidth = bitMatrix.getWidth();
+        int bitMatrixHeight = bitMatrix.getHeight();
+        int[] pixels = new int[bitMatrixWidth * bitMatrixHeight];
+
+        for (int y = 0; y < bitMatrixHeight; y++) {
+            int offSet = y * bitMatrixWidth;
+            for (int x = 0; x < bitMatrixWidth; x++) {
+                pixels[offSet + x] = bitMatrix.get(x, y) ?
+                        getResources().getColor(R.color.black) : getResources().getColor(R.color.white);
+            }
+        }
+        Bitmap bitmap = Bitmap.createBitmap(bitMatrixWidth, bitMatrixHeight, Bitmap.Config.ARGB_4444);
+        bitmap.setPixels(pixels, 0, 500, 0, 0, bitMatrixWidth, bitMatrixHeight);
+        return bitmap;
     }
 
 }

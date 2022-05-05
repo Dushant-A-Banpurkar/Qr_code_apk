@@ -65,7 +65,6 @@ public class Singup extends AppCompatActivity {
         mcnpassword=findViewById(R.id.password);
         mregisterbtn=findViewById(R.id.registerbtn);
         signinbtn=findViewById(R.id.signinbtn);
-        sqrcode=findViewById(R.id.Qrcode);
         progressDialog=new ProgressDialog(this);
         fAuth=FirebaseAuth.getInstance();
         fStore=FirebaseFirestore.getInstance();

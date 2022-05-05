@@ -4,21 +4,37 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2578125" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/drawable/ic_baseline_assistant_photo_24.xml" value="0.1" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.1" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/drawable/ic_baseline_format_list_bulleted_24.xml" value="0.1" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/drawable/ic_baseline_menu_book_24.xml" value="0.1" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/drawable/ic_baseline_photo_camera_24.xml" value="0.2578125" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/drawable/ic_baseline_qr_code_scanner_24.xml" value="0.262" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2578125" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/drawable/icons8_load.xml" value="0.2578125" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/drawable/shadow.xml" value="0.2578125" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout-w1240dp/activity_proffesarlogin.xml" value="0.6" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout-w936dp/activity_proffesarlogin.xml" value="0.2" />
-        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_dashboard1.xml" value="0.264" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_dashboard1.xml" value="0.25677083333333334" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_forget.xml" value="0.25" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_login.xml" value="0.29133858267716534" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_menus.xml" value="0.25677083333333334" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_optionpage.xml" value="0.264" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_proffesarlogin.xml" value="0.25677083333333334" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_proffesor.xml" value="0.25677083333333334" />
-        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_proffesor_sign_page.xml" value="0.15806159420289856" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_proffesor_sign_page.xml" value="0.264" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_proffesor_sign_up_dash_borad.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_proffesor_sign_up_page.xml" value="0.25677083333333334" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_singup.xml" value="0.264" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/app_bar_navigations.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/content_navigations.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/fragment_gallery.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/fragment_home.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/fragment_slideshow.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/header.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/layout/nav_header_navigations.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Demo/app/src/main/res/menu/sidemenu.xml" value="0.25677083333333334" />
       </map>
     </option>
   </component>

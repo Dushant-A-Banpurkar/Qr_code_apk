@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home_menu"
+            android:icon="@drawable/ic_baseline_history_24"
+            android:title="Attendance Sheet"/>
+        <item
+            android:id="@+id/time_table_menu"
+            android:icon="@drawable/ic_baseline_assistant_photo_24"
+            android:title="Time Table"/>
+        <item
+            android:id="@+id/exam_time_table_menu"
+            android:icon="@drawable/ic_baseline_assistant_photo_24"
+            android:title="Exam Shedules"/>
+        <item
+            android:id="@+id/notice_menu"
+            android:icon="@drawable/ic_baseline_notifications_active_24"
+            android:title="Notice"/>
+        <item
+            android:id="@+id/lgtbtn"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="Logout"/>
+    </group>
+
+
+</menu>

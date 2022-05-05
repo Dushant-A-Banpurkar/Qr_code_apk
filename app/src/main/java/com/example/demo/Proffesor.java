@@ -15,7 +15,7 @@ import android.widget.Toast;
 public class Proffesor extends AppCompatActivity {
     EditText Code1;
     Button Continue;
-    private int Code;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,16 @@ public class Proffesor extends AppCompatActivity {
         setContentView(R.layout.activity_proffesor);
         Code1=findViewById(R.id.code1);
         Continue=findViewById(R.id.contbtn);
-        Code=536677956;
+
+        Continue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent=new Intent(Proffesor.this,Proffesor_Sign_Page.class);
+                startActivity(intent);
+
+            }
+        });
 
 
     }

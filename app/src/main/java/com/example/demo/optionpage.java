@@ -20,8 +20,15 @@ public class optionpage extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_optionpage);
         stbtn=findViewById(R.id.stbtn);
-        insbtn=findViewById(R.id.insbtn);
+        insbtn=findViewById(R.id.profbtn);
 
+        insbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(optionpage.this,Proffesor.class);
+                startActivity(intent);
+            }
+        });
         stbtn.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
@@ -30,13 +37,7 @@ public class optionpage extends AppCompatActivity {
              }
         });
 
-        insbtn.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View v) {
-                 Intent intent=new Intent(optionpage.this,Login.class);
-                 startActivity(intent);
-             }
-        });
+
     }
 
 }
